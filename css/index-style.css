@@ -31,9 +31,10 @@ a {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
-}
-img {
-  width: 10%;
+  position: relative;
+
+  align-self: center;
+  align-items: center;
 }
 
 /* header incl nav */
@@ -42,20 +43,35 @@ header {
 }
 nav {
   border: 2px dashed salmon;
-  position: sticky;
+}
+nav ul {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  align-items: center;
-
   justify-content: center;
 }
 nav div {
   border: 2px dashed hotpink;
-  width: 33%;
-
-  display: flex;
+  width: 100%;
   list-style: none;
+  display: flex;
+  justify-self: space-around;
+}
+nav div:nth-child(1) {
+  border: 2px dashed yellowgreen;
+}
+nav div:nth-child(2) {
+  border: 2px dashed seagreen;
+}
+nav div:nth-child(3) {
+  border: 2px dashed khaki;
+  float: right;
+}
+.logo {
+  color: red;
+}
+input {
+  background-color: #212121;
+  border: 0.5px solid #909090;
 }
 /* sideMenu */
 .sideMenu {
@@ -63,11 +79,12 @@ nav div {
   padding-right: 1%;
   background-color: #212121;
   width: fit-content;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   justify-content: space-around;
   justify-content: space-evenly;
+  float: left;
 }
 .sideMenu div {
   /* border: 2px dashed olivedrab; */
@@ -92,3 +109,4 @@ nav div {
   color: #909090;
   margin-right: 10%;
 }
+/* main thingie */
