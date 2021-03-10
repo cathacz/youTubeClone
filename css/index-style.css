@@ -40,6 +40,17 @@ img {
 header {
   background-color: #212121;
 }
+nav {
+  display: inline-flexbox;
+  align-content: center;
+  align-items: center;
+
+  justify-content: center;
+}
+nav div {
+  display: flex;
+  list-style: none;
+}
 .sideMenu {
   background-color: #212121;
   width: 10vw;
@@ -54,17 +65,5 @@ header {
   color: #909090;
 }
 .sideMenu li {
-  list-style: none;
-}
-
-nav {
-  display: inline-flexbox;
-  align-content: center;
-  align-items: center;
-
-  justify-content: center;
-}
-nav div {
-  display: flex;
   list-style: none;
 }
