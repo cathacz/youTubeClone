@@ -22,6 +22,7 @@
   font-size: 16px;
   font-family: "Roboto-Light";
 }
+/* general stuff */
 body {
   background-color: #181818;
 }
@@ -29,41 +30,65 @@ i,
 a {
   color: white;
   text-decoration: none;
-}
-.sideMenu i {
-  color: #909090;
-  margin-right: 5%;
+  font-size: 0.9rem;
 }
 img {
   width: 10%;
 }
+
+/* header incl nav */
 header {
   background-color: #212121;
 }
 nav {
-  display: inline-flexbox;
+  border: 2px dashed salmon;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
   align-content: center;
   align-items: center;
 
   justify-content: center;
 }
 nav div {
+  border: 2px dashed hotpink;
+  width: 33%;
+
   display: flex;
   list-style: none;
 }
+/* sideMenu */
 .sideMenu {
+  padding-left: 1%;
+  padding-right: 1%;
   background-color: #212121;
-  width: 10vw;
+  width: fit-content;
   height: 100vh;
   display: flex;
   justify-content: center;
   justify-content: space-around;
+  justify-content: space-evenly;
+}
+.sideMenu div {
+  /* border: 2px dashed olivedrab; */
+  padding-bottom: 6%;
+  margin-bottom: 6%;
+  border-bottom: 0.1px solid #909090;
+}
+.sideMenu :first-child {
+  padding-top: 3%;
 }
 .sideMenu p {
   text-transform: uppercase;
   font-family: "Roboto-Medium";
   color: #909090;
+  margin-bottom: 6%;
 }
 .sideMenu li {
   list-style: none;
+  margin-bottom: 6%;
+}
+.sideMenu i {
+  color: #909090;
+  margin-right: 10%;
 }
