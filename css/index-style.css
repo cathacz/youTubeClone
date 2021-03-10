@@ -32,9 +32,6 @@ a {
   text-decoration: none;
   font-size: 0.9rem;
   position: relative;
-
-  align-self: center;
-  align-items: center;
 }
 
 /* header incl nav */
@@ -43,12 +40,15 @@ header {
 }
 nav {
   /* border: 2px dashed salmon; */
-  padding: 0.8%;
+  padding: 0.8% 1%;
 }
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+}
+nav li {
+  border: 2px dashed darkslategray;
+  margin-right: 2%;
 }
 nav div {
   /* border: 2px dashed hotpink; */
@@ -58,16 +58,14 @@ nav div {
   justify-self: space-around;
   position: relative;
 }
-nav div:nth-child(1) {
+nav div:nth-child(1) li {
   /* border: 2px dashed yellowgreen; */
 }
-nav div:nth-child(2) {
+nav div:nth-child(2) li {
   /* border: 2px dashed seagreen; */
 }
-nav div:nth-child(3) {
-  /* border: 2px dashed khaki; */
-  justify-content: right;
-  float: right;
+nav div:nth-child(3) li {
+  border: 2px dashed khaki;
 }
 
 nav div li i {
@@ -77,10 +75,9 @@ nav div li a {
 .logo {
   color: red;
 }
-input {
+li input {
   background-color: #181818;
   border: 0.5px solid #909090;
-  width: 60%;
 }
 /* sideMenu */
 .sideMenu {
@@ -97,8 +94,8 @@ input {
 }
 .sideMenu div {
   /* border: 2px dashed olivedrab; */
-  padding-bottom: 6%;
-  margin-bottom: 6%;
+  padding-bottom: 8%;
+  margin-bottom: 8%;
   border-bottom: 0.1px solid #909090;
 }
 .sideMenu :first-child {
@@ -108,17 +105,20 @@ input {
   text-transform: uppercase;
   font-family: "Roboto-Medium";
   color: #909090;
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 }
 .sideMenu li {
   list-style: none;
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 }
 .sideMenu i {
   color: #909090;
   margin-right: 10%;
 }
 /* main thingie */
-.titlePic {
-  width: 86%;
+
+section {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
 }
