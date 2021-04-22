@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto-Light";
+}
+/* general stuff */
+body {
+  background-color: #0f0f0f;
+}
+i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+/* header incl nav */
+header {
+  background-color: #202020;
+}
+nav {
+  /* border: 2px dashed salmon; */
+  padding: 0.8% 1%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav li {
+  border: 2px dashed darkslategray;
+  margin-right: 2%;
+}
+nav div {
+  /* border: 2px dashed hotpink; */
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-self: space-around;
+  position: relative;
+}
+nav div:nth-child(1) li {
+  /* border: 2px dashed yellowgreen; */
+}
+nav div:nth-child(2) li {
+  /* border: 2px dashed seagreen; */
+}
+nav div:nth-child(3) li {
+  border: 2px dashed khaki;
+}
+
+nav div li i {
+}
+nav div li a {
+}
+.logo {
+  color: red;
+}
+li input {
+  background-color: #181818;
+  border: 0.5px solid #909090;
+}
+/* sideMenu */
+.sideMenu {
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #212121;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  float: left;
+}
+.sideMenu div {
+  /* border: 2px dashed olivedrab; */
+  padding-bottom: 8%;
+  margin-bottom: 8%;
+  border-bottom: 0.1px solid #909090;
+}
+.sideMenu :first-child {
+  padding-top: 3%;
+}
+.sideMenu p {
+  text-transform: uppercase;
+  font-family: "Roboto-Medium";
+  color: #909090;
+  margin-bottom: 8%;
+}
+.sideMenu li {
+  list-style: none;
+  margin-bottom: 8%;
+}
+.sideMenu i {
+  color: #909090;
+  margin-right: 10%;
+}
+/* main thingie */
+
+section {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+}
