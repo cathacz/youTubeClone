@@ -1,0 +1,28 @@
+.wrongTurn {
+  margin: auto;
+  width: 65vw;
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  .wrong {
+    i {
+      font-size: 28pt;
+      padding: 2vh;
+    }
+    p {
+      align-content: center;
+      text-align: center;
+    }
+
+    button {
+      background-color: lightcoral;
+      border: lightcoral 2px solid;
+      border-radius: 3px;
+      padding: 1vh;
+      margin-top: 2vh;
+    }
+  }
+}

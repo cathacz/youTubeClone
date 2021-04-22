@@ -1,0 +1,35 @@
+.sideMenu {
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #212121;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  float: left;
+}
+.sideMenu div {
+  /* border: 2px dashed olivedrab; */
+  padding-bottom: 8%;
+  margin-bottom: 8%;
+  border-bottom: 0.1px solid #909090;
+}
+.sideMenu :first-child {
+  padding-top: 3%;
+}
+.sideMenu p {
+  text-transform: uppercase;
+  font-family: "Roboto medium";
+  color: #909090;
+  margin-bottom: 8%;
+}
+.sideMenu li {
+  list-style: none;
+  margin-bottom: 8%;
+}
+.sideMenu i {
+  color: #909090;
+  margin-right: 10%;
+}
