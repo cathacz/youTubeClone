@@ -40,14 +40,15 @@ nav {
   /* border: 2px dashed salmon; */
   padding: 0.8% 1%;
 }
-nav:nth-child(2) {
-  border: orange 2px dashed;
-  align-content: center;
-}
 
 nav ul {
   display: flex;
   flex-direction: row;
+}
+nav ul:nth-child(1) {
+  align-content: center;
+  justify-content: center;
+  border: coral 2px solid;
 }
 
 nav li {
