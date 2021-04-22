@@ -1,10 +1,16 @@
 const theme = () => {
   const mood = document.querySelector("#light-dark").checked;
   body = document.querySelector("body").style;
-  console.log(mood);
+  header = document.querySelector("header").style;
+  sideMenu = document.querySelector(".sideMenu").style;
+
   if (mood) {
-    body.backgroundColor = "hotpink";
+    body.backgroundColor = "lightcoral";
+    header.backgroundColor = "lightcoral";
+    sideMenu.backgroundColor = "lightcoral";
   } else {
     body.backgroundColor = "sandybrown";
+    header.backgroundColor = "sandybrown";
+    sideMenu.backgroundColor = "sandybrown";
   }
 };
