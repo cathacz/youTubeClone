@@ -6,23 +6,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: whitesmoke;
+
   .wrong {
     i {
       font-size: 28pt;
-      padding: 2vh;
+      padding: 2vh 0.5vh 2vh 0.5vh;
+      color: lightcoral;
     }
     p {
+      color: whitesmoke;
       align-content: center;
       text-align: center;
     }
 
     button {
       background-color: lightcoral;
-      border: lightcoral 2px solid;
+      border: none;
       border-radius: 3px;
       padding: 1vh;
       margin-top: 2vh;
+      color: rebeccapurple;
     }
   }
 }
